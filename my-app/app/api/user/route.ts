@@ -1,16 +1,20 @@
-
+import { PrismaClient } from '@prisma/client'
+const client = new PrismaClient()
 import { NextRequest } from "next/server";
 
-export function GET(){
-    return Response.json({
-        email: 'fatima@gmail.com',
-        name: 'fatima'
-    })
+export async function GET() {
+    const user = await client.user.findFirst({});
+    return Response.json({ name: user?.username, email: user?.username })
 }
 
 export async function POST(req: NextRequest) {
     const body = await req.json()
-    console.log(body)
+    const user = await client.user.create({
+        data: {
+            username: body.username,
+            password: body.password
+        }
+    })
     return Response.json({
         message : "User Created"
     })
