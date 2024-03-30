@@ -20,7 +20,8 @@ const handler = NextAuth({
                 };
             }
         })
-    ]
+    ],
+    secret: process.env.NEXTAUTH_URL
 })
 export const GET = handler;
 export const POST = handler;
