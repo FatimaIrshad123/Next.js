@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TestimonialCard from "@/components/TestimonialCards";
 import UpcomingWedinars from "@/components/UpcomingWebinars";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import Instructors from "@/components/Instructors";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <WhyChooseUs />
         <TestimonialCard />
         <UpcomingWedinars />
+        <Instructors />
       </main>
     </div>  
   );
