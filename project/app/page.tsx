@@ -4,6 +4,7 @@ import TestimonialCard from "@/components/TestimonialCards";
 import UpcomingWedinars from "@/components/UpcomingWebinars";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Instructor from "@/components/instructors";
+import Footor from "@/components/ui/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <TestimonialCard />
         <UpcomingWedinars />
         <Instructor />
+        <Footor />
       </main>
     </div>  
   );
