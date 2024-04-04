@@ -2,7 +2,7 @@
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { WavyBackground } from "./ui/wavy-background";
 
-export default function Instructors(){
+export default function Instructor(){
     return (
         <div className="relative h-[40rem] overflow-hidden flex items-center justify-center">
             <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center h-full">
